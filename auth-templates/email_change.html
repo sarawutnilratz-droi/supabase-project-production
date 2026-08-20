@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ยืนยันการเปลี่ยนอีเมล</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f5f5;font-family:Arial,'Noto Sans Thai',sans-serif;color:#222;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#f5f5f5;padding:24px 12px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:600px;background:#ffffff;border:1px solid #e5e5e5;border-radius:10px;">
+          <tr>
+            <td style="padding:32px;">
+
+              <h2 style="margin:0 0 20px;font-size:24px;">ยืนยันการเปลี่ยนอีเมล</h2>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.8;">
+                กรุณาคลิกปุ่มด้านล่างเพื่อยืนยันการเปลี่ยนอีเมลจาก
+                <strong>{{ .Email }}</strong> เป็น <strong>{{ .NewEmail }}</strong>
+              </p>
+              <p style="margin:0 0 24px;">
+                <a href="{{ .ConfirmationURL }}"
+                   style="display:inline-block;padding:12px 20px;background:#111;color:#fff;text-decoration:none;border-radius:6px;font-size:16px;">
+                  ยืนยันการเปลี่ยนอีเมล
+                </a>
+              </p>
+              <p style="margin:0;font-size:13px;line-height:1.7;color:#777;">
+                หากปุ่มไม่ทำงาน สามารถเปิดลิงก์นี้ได้โดยตรง:<br>
+                <a href="{{ .ConfirmationURL }}" style="color:#2563eb;word-break:break-all;">{{ .ConfirmationURL }}</a>
+              </p>
+
+              <p style="margin:32px 0 0;font-size:14px;line-height:1.7;color:#666;">
+                ขอบคุณมากครับ<br>
+                ทีมงาน CodingThailand.com
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
